@@ -34,4 +34,4 @@ function tpe_enqueue_settings_page_assets() {
 		$script_asset['version']
 	);
 }
-add_action( 'admin_enqueue_scripts', 'tpe_enqueue_settings_page_assets' );
+add_action( 'gutenberg_settings_page_after_enqueue_assets', 'tpe_enqueue_settings_page_assets' );
