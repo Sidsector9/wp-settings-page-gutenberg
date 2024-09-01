@@ -22,7 +22,7 @@ function wpdocs_my_plugin_menu() {
 		__( 'My Options', 'textdomain' ),
 		__( 'Gutenberg Settings Page', 'textdomain' ),
 		'manage_options',
-		'my-plugin.php',
+		'gutenberg-settings-page.php',
 		'my_plugin_page'
 	);
 }
