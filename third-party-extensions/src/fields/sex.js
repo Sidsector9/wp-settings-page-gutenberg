@@ -20,7 +20,6 @@ function InjectAdditionalFields() {
 					return (
 						<BaseControl label={ __( 'Sex' ) }>
 							<RadioControl
-								label={ __( 'Male' ) }
 								options={ [
 									{
 										label: __( 'Male' ),

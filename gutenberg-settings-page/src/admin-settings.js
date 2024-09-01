@@ -19,11 +19,15 @@ export const AdminSettings = () => {
 			<h1>{ __( 'Settings using Gutenberg components' ) }</h1>
 
 			<BaseControl label={ __( 'First Name' ) }>
-				<TextControl/>
+				<TextControl
+					onChange={ ( fname ) => setAppData( { ...appData, fname } ) }
+				/>
 			</BaseControl>
 
 			<BaseControl label={ __( 'Last Name' ) }>
-				<TextControl/>
+				<TextControl
+					onChange={ ( lname ) => setAppData( { ...appData, lname } ) }
+				/>
 			</BaseControl>
 
 			<Slot name="gutenberg-settings-additional-fields" fillProps={ { appData, setAppData } } />
